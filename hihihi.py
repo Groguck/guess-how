@@ -1,4 +1,8 @@
-from PIL import Image
-image = Image.open("G:\Klasse 10bcd IF Titz\Projekt stephani\ilder\s-l1200.jpg")
-image.show()
-hihihih
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+
+img = mpimg.imread('./ilder/ha.jpg')
+
+plt.imshow(img)
+plt.axis('off')  # Entfernt die Achsen
+plt.show()
