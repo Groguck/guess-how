@@ -440,3 +440,52 @@ characters = [
     "hat_ohrringe":  ,
     },
 ]
+
+
+
+
+
+
+
+if fragenr==0:
+    print ("# Du hast gefragt: Ist die Person blond? #")
+    antw = character["ist_blond"]
+elif fragenr==1:
+    print ("# Du hast gefragt: Hat die Person schwarze Haare? #")
+    antw = character["hat_schwarzehaare"]
+elif fragenr==2:
+    print ("# Du hast gefragt: Hat die Person weisse Haare? #")
+    antw = character["hat_Weissehaare"]
+elif fragenr==3:
+    print ("# Du hast gefragt: Hat die Person eine Glatze? #")
+    antw = character["hat_glatze"]
+elif fragenr==4:
+    print ("# Du hast gefragt: Hat die Person braune Haare? #")
+    antw = character["hat_braunehaare"]
+elif fragenr==5:
+    print ("# Du hast gefragt: Hat die Person rote Haare? #")
+    antw = character["hat_rotehaare"]
+elif fragenr==6:
+    print ("# Du hast gefragt: Hat die Person einen Bart? #")
+    antw = character["hat_bart"]
+elif fragenr==7:
+    print ("# Du hast gefragt: Hat die Person braune Augen? #")
+    antw = character["hat_brauneaugen"]
+elif fragenr==8:
+    print ("# Du hast gefragt: Hat die Person blaue Augen? #")
+    antw = character["hat_blaueaugen"]
+elif fragenr==9:
+    print ("# Du hast gefragt: Ist die Person weiss? #")
+    antw = character["ist_weiss"]
+elif fragenr==10:
+    print ("# Du hast gefragt: Hat die Person eine grosse Nase? #")
+    antw = character["hat_grosse_nase"]
+elif fragenr==11:
+    print ("# Du hast gefragt: Traegt die Person einen Hut? #")
+    antw = character["hat_hut"]
+elif fragenr==12:
+    print ("# Du hast gefragt: Traegt die Person eine Brille? #")
+    antw = character["hat_brille"]
+elif fragenr==13:
+    print ("# Du hast gefragt: Traegt die Person Ohrringe? #")
+    antw = character["hat_ohrringe"]
