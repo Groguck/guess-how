@@ -7,7 +7,7 @@ hihihihihihihihihihihihihihihihihihihhihihihihihihihihihihihihihihihihihihihihih
 
 
 
-die  richtige datei ist vielkuuleresprogramm.py
+die  richtige datei ist vielkuuleresprogramm.pymm
 die verwendeten packages sind "pillow" und "random"
-der code ist darauf ausgelegt in einer .ipynb
+der code ist darauf ausgelegt in einer .ipynb zu laufen
 zumbeispiel in VS code
