@@ -486,6 +486,7 @@ def antwort(fragenr_def):
         return "ob sie ohrringe traegt und.."
 
 namen_nichtexestents_counter=0
+fragen_counter = 0
 
 ## Hauptprogramm
 print ("#Willkommen zum 'Wer ist es?' Spiel!#")
@@ -502,7 +503,7 @@ print (fragen_liste)
 print ("# Gib bitte nur die Zahl von der frage ein, die du stellen möchtest#")
 # Erste Frage
 
-
+namen_nichtexestents_counter = 0
 weiter="ja"
 
 
@@ -523,8 +524,10 @@ while weiter == "ja":
     frage_stellen_antwort = frage_stellen(fragenr, character)
     if frage_stellen_antwort == True:
         print (f"# du hast gefragt {antwort(fragenr)} Ja, die Person ist #")
+        fragen_counter = fragen_counter +1
     else:
         print (f"# du hast gefragt {antwort(fragenr)} Nein, die Person ist nicht #")
+        fragen_counter = fragen_counter +1
     
     ausschließen = input("# Möchtest du einen Charakter ausschließen? Wenn ja dann schreibe den namen. Wenn nein schreibe 'nein' #")
     while ausschließen != "nein":
@@ -532,6 +535,7 @@ while weiter == "ja":
             if characters[nameausschließen]["name"] == ausschließen:
                 characters.pop (nameausschließen)
                 print (f"# Du hast {ausschließen} ausgeschlossen #")
+                namen_nichtexestents_counter = 0
                 break
             else:
                 namen_nichtexestents_counter += 1
@@ -565,3 +569,4 @@ if guess.lower() == character["name"]:
     print ("# Herzlichen Glückwunsch! Du hast richtig geraten! #")
 else:
     print (f"# Leider falsch! Die richtige Antwort ist {character['name']}! #")
+print (f"#du hast {fragen_counter} fragen gestellt#")
